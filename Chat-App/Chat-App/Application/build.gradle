@@ -1,0 +1,43 @@
+apply plugin: 'org.springframework.boot'
+
+
+
+dependencies {
+
+  implementation project(':websocket')
+
+  }
+
+bootJar {
+
+  archiveName = 'giceaApp.jar'
+
+}
+
+
+
+springBoot {
+
+  buildInfo()
+
+}
+
+
+
+
+
+  test {
+
+    useJUnitPlatform()
+
+  }
+
+sourceSets {
+
+    generated {
+
+      java { srcDirs = ['src/main/generated'] }
+
+    }
+
+  }

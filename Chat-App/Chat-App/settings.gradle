@@ -1,0 +1,5 @@
+rootProject.name = 'Chat-App'
+
+include "Application"
+
+include "WebSocket"
